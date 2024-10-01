@@ -1,0 +1,16 @@
+display: grid - biến phần tử thành định dạng grid
+grid-template-columns: chia theo cột
+grid-template-row: chia theo hàng
+grid-template-area: đặt tên và định dạng khu vực lưới
+grid-gap: khoảng cách giữa các grid
+gap-row: khoảng cách giữa các  hàng  
+gap-column: khoảng cách giữa các cột  
+grid-area: kết hợp giữa column và row 
+justify-self: căn chỉnh theo chiều ngang
+align-self: căn chỉnh theo chiều dọc
+justify-item: căn tất cả các phần tử theo chiều ngang
+align-item: căn tất cả các phần tử theo chiều dọc
+
+grid và flexbox: cả 2 đều dùng để chia layout điểm khác biệt giữa grid và flexbox là grid thì có thể chia theo 2 chiều cả ngang và dọc còn flexbox thì chỉ có thể chia theo 1 chiều là ngang hoặc dọc 
+khi nào nên dùng grid: khi bố cục trở nên phức tạp và chia theo tỉ lệ.
+khi nào nên dùng flexbox: khi chỉ cần chia bố cục theo trục hàng ngang hoặc dọc và phù hợp với bố cục đơn giản.

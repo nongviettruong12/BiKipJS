@@ -1,0 +1,12 @@
+display: flex -  định vị phần tử là flexbox
+flex-direction: row sắp xếp theo hàng ngang 
+flex-direction: column  sắp xếp theo hàng dọc
+flex-direction: row-reverse đảo ngược hàng
+flex-direction: column-reverse  đảo ngược cột
+justify-content: căn các phần tử theo dọc trục chính ( thường là chiều ngang )
+align-items: căn các phần tử theo dọc trục phụ ( thường là chiều dọc )
+flex-wrap: cho phép các phần tử có thể tự động xuống dòng hoặc không nếu container không chứa đủ
+align-content: căn chỉnh các hàng trong container khi có nhiều hàng 
+oder: xác định thứ tự hiển thị của phần tử con
+flex-grow: xác định khả năng mở rộng phần tử con để chiếm không gian trống còn lại trong container
+flex-shrink: xác định khả năng co hẹp  phần tử con để chiếm không gian trống còn lại trong container

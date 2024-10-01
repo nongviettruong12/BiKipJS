@@ -1,0 +1,127 @@
+// so sánh tương đối và so sánh tuyệt đối 
+
+// tương đối  ( == ): chỉ kiểm tra giá trị 
+if (5 == '5'){
+    console.log('true so sanh tuong doi');
+}else{
+    console.log('false so sanh tuong doi');
+}
+// true 
+
+// tuyệt đối  ( === ):  kiểm tra giá trị và cả kiểu dữ liệu 
+if (5 === '5'){
+    console.log('true so sanh tuyet doi');
+}else{
+    console.log('false so sanh tuyet doi');
+}
+// false 
+-------------------------------------------------------------
+// so sánh khác  ( != ): so sánh chỉ kiểm tra giá trị
+if (5 != '6'){
+    console.log('true so sanh khac');
+}else{
+    console.log('false so sanh khac');
+}
+// true 
+
+// so sánh tuyệt đối ( !== ): so sánh kiểm tra giá trị và cả kiểu dữ liệu
+if (5 !== '6'){
+    console.log('true so sanh khac tuyet doi');
+}else{
+    console.log('false so sanh khac tuyet doi');
+}
+// true
+------------------------------------------------------------------------------
+// so sánh lớn hơn  (a > b): khi a lớn hơn b thì sẽ trả về true và ngược lại 
+
+if (5 > 3){
+    console.log('true so sanh lon hon');
+}else{
+    console.log('false so sanh lon hon');
+}
+// true
+
+// so sánh nhỏ hơn  (a < b): khi a nhỏ hơn b và sẽ trả về true và ngược lại 
+
+if (5 < 3){
+    console.log('true so sanh nho hon');
+}else{
+    console.log('false so sanh nho hon  ');
+}
+// false
+--------------------------------------------------------------------------------------------------------------------
+// so sánh lớn hơn hoặc bằng ( a >= b ): khi thỏa mãn điều kiện a lớn hơn hoặc bằng b thì sẽ trả về true và ngược lại 
+
+if (5 >= 3){
+    console.log('true lon hon hoac bang');
+}else{
+    console.log('false lon hon hoac bang');
+}
+// false
+
+// so sánh nhỏ hơn hoặc bằng ( a <=b ): khi thỏa mãn điều kiện a bé hơn hoặc bằng b thì sẽ trả về true và ngược lại
+
+if (5 <= 3){
+    console.log('true be hon hoac bang');
+}else{
+    console.log('false be hon hoac bang');
+}
+// false
+--------------------------------------------------------------------------------------------------------------------------
+// toan tu logic
+
+// toan tu AND ( a>b && a>b ): trả về true khi cả 2 điều kiện đều đúng và ngược lại 
+
+if(5 > 6  && 5 < 4){
+        console.log('true toan tu and');
+}else{
+    console.log('false toan tu and');  
+}
+// false
+
+// toan tu OR ( a>b || a >b ): trả về true nếu có ít nhất 1 điều kiện là true  
+
+if(5 > 6  || 5 > 4){
+    console.log('true toan tu or');
+}else{
+    console.log('false toan tu or');
+}
+// true
+
+// toan tu NOT (!true) : đảo ngược lại giá trị boolean của kết quả
+
+if(!(5 > 6)){
+    console.log('true toan tu not');
+}else{
+    console.log('false toan tu not');
+}
+// true
+----------------------------------------------------------------------------------
+// toan tu ba ngoi (? :): dùng để viết điều kiện rút gọn thay vì if else 
+
+let age = 18
+let canVote = (age > 18 ) ? 'true' : 'flase'
+console.log(canVote,'toan tu 3 ngoi');
+// false
+
+// toan tu nullish (??): Dùng để trả về giá trị bên phải nếu giá trị bên trái là null hoặc undefined
+
+let name = null
+
+let displayName = name ?? 'guest'
+console.log(displayName,'toan tu null');
+// guest
+
+// toan tu optional chaining (?.): Dùng để tránh lỗi khi truy cập thuộc tính của một giá trị null hoặc undefined
+
+let user = {
+    name: 'John',
+    address: {
+        street: '123 Main St',
+        city: 'New York'
+    }
+}
+
+let street = user?.address?.street?? 'Unknown'
+console.log(street, 'toan tu optional chaining');
+ // 123 Main St

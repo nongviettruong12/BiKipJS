@@ -1,0 +1,25 @@
+Khái niệm|: sessionStorage và localStorage là 2 web Storage api trong javascript giúp lưu trữ dữ liệu trên trình duyệt (Browser) mà không cần đến server. 
+cả 2 đều lưu trữ dưới dạng key và value
+
+So sánh: 
+localStorage:
++ thời gian:dữ liệu  tồn tại không thời hạn và chỉ đến khi bị xóa thủ công hoặc người dùng xóa thì mới biến mất
++ kích thước : khoảng 5MB
++ Phạm vi: dữ liệu có thể truy cập bất kỳ tab hoặc cửa sổ nào trong cùng một nguồn gốc 
+sessionStorage:
+ + thời gian: dữ liệu sẽ bị xóa khi đóng trình duyệt hoặc tab
+ + kích thước : khoảng 5MB
++ Phạm vi: dữ liệu chỉ có thể truy cập từ tab hoặc cửa sổ mà nó được tạo ra
+
+khi nao nen dung va khong nen
+
+khi nào nên sử dụng localStorage: khi cần phải lưu thông tin lâu dài như thông tin người dùng, cấu hình ứng dụng đã mã hóa  và chia sẻ dữ liệu qua các tab |  dài hạn
+khi nào không nên sử dụng localStorage: + các dữ liệu nhạy cảm như thông tin cá nhân, mật khẩu chưa mã hóa ...
+					+ nếu cần tính bảo mật thì localstorage không phải là một sự lựa chọn tốt
+					+ lượng dữ liệu lớn được lưu trữ
+					+ dữ liệu cần tồn tại lâu dài như localStorage 
+
+khi nào nên sử dụng sessionStorage: khi cần phải lưu trữ trong 1 lần làm việc như thông tin giỏ hàng | ngắn hạn
+khi nào không nên sử dụng sessionStorage: + dữ liệu cần tồn tại lâu dài như localStorage 
+					  + cần chia sẻ dữ liệu qua các tab như localStorage
+					  + cũng như localStorage thì không sessionStorage không thể lưu trữ lượng dữ liệu lớn 

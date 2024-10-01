@@ -1,0 +1,12 @@
+for: là một vòng lặp
+(let i = 0; i < 10 ;i++)
+trong đó: i tên biến với giá trị khởi tạo là 0
+i < 10 : là điều kiện để kết thúc vòng lặp
+i++ : đây là điều kiện tăng hoặc giảm tùy thuộc vào giá trị mong muốn và kết thúc vòng lặp
+
+map(): là một phương thức dùng để các mảng tạo ra một mảng mới mà không thay đổi mảng ban đầu và trả về một mảng mới đã được xử lý
+const number = [0,1,2,3,4]
+const mapNumber = number.map(numbers => numbers * 2 )
+log(0,2,4,6,8)
+đoạn code trên để tạo ra 1 mảng với các giá trị mới là mapNumber thì ta dùng mảng cũ là number * 2 để tạo ra một mảng mới
+
