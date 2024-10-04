@@ -1,0 +1,11 @@
+sự khác nhau giữa DOM và virtual DOM
+DOM là viết từ của document object model ( tạm dịch là mô hình các đối tượng tài liệu ). 
+    DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc HTML hay XML bằng các ngôn ngữ lập trình như javascript,... 
+Virtual DOM là gì bản sao của DOM thật và thường trong các thư viện như React, Vue... có thể được cập nhật mà không thay đổi đến DOM thật và không tồn tại trong trình duyệt. Chỉ lưu lại trong bộ nhớ
+
+DOM                                      | virtual DOM 
+DOM thật biểu diễn cấu trúc của trang web|DOM ảo biểu diễn bộ nhớ ảo của trang web
+lãng phí nhiều bộ nhớ                    |lãng phí ít bộ nhớ
+có thể trực tiếp cập nhật HTML           |không thể trực tiếp cập nhật HTML. 
+khá tốn kém bộ nhớ                       | không tốn kém bộ nhớ 
+Sẽ rất chậm nếu có nhiều thay đổi        |cập nhật nhanh hơn nhờ cơ chế diff ( chỉ cập nhật những phần đã được thay đổi )
