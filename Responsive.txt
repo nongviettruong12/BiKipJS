@@ -1,0 +1,35 @@
+- HTML viewport meta tag là gì: là thẻ meta với thuộc tính viewport được sử dụng để điều khiển hiển thị trang web trên các thiết bị có màn hình khác nhau 
+với cú pháp là:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+- Responsive Image là gì: là Hình ảnh tự động điều chỉnh kích thước của chúng để phù hợp với màn hình của thiết bị người dùng, tránh bị quá to hay quá nhỏ 
+với cú pháp thường dùng để responsive image là: 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+- Responsive Text là gì: là văn bản tự động thay đổi kích thước dựa trên kích thước màn hình hoặc độ phân giải của thiết bị, tránh gây khó đọc cho người dùng
+với cú pháp thường dùng để responsive text là: 
+{
+    font-size: 5vw; (vw ở đây là viewport width. sử dụng những đơn vị như là rem, em hoặc đơn vị % sẽ tốt hơn khi sử dụng đơn vị px)
+}
+
+- CSS Media Queries là gì: là một kỹ thuật trong CSS cho phép áp dụng các kiểu dáng khác nhau dựa trên kích thước màn hình hoặc các đặc điểm khác của thiết bị
+với cú pháp thường dùng là: 
+@media only screen and (max-width: 768px){
+    body{
+        background-color: red;
+    }
+}
+
+- Responsive Layout:  là kỹ thuật sắp xếp các phần tử của trang web sao cho chúng có thể tự động thay đổi vị trí hoặc kích thước để phù hợp với nhiều kích thước màn hình khác nhau.
+Hiện nay có 2 kĩ thuật để responsive layout được sử dụng nhiều nhất là Flexbox và grid.
+với cú pháp thường dùng là: 
+.container{
+    display:flex; #định dạng thành khối flex
+    flex-wrap:wrap;
+}
+.item{
+    flex: 1 1 200px; #các phần tử sẽ tự động co dãn để chiếm 200px hoặc hơn.
+}
