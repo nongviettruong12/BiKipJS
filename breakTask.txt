@@ -1,0 +1,27 @@
+Menu trái:
+gồm có: 
+- logo,
+- avatar tài khoản, 
+- các mục điều hướng (Admin Dashboard, Ticket, Settings).
+*thời gian hoàn thành: 2 tiếng 
+Thanh navbar:
+gồm có: 
+- tiêu đề 
+- thông báo
+- tên tài khoản 
+*thời gian hoàn thành: 1 tiếng
+Bảng ticket:
+Hiển thị  với mỗi ticket trong một thẻ, sắp xếp thành nhiều hàng và cột.
+Các thành phần chi tiết:
+Ticket i0tem: Mỗi mục ticket có các thành phần:
+ID ticket.
+gồm có các Trạng thái (Open, In Progress, Closed).
+Tiêu đề 
+Mô tả ngắn.
+Phòng ban 
+Thời gian liên quan đến ticket.
+*thời gian hoàn thành: 2 tiếng 
+Mỗi ticket có một checkbox ở góc trên để chọn.
+Có thể hiển thị nhiều trạng thái (Open, In Progress, Closed) trên mỗi ticket.
+Các ticket được phân loại và sắp xếp theo thời gian.
+			
