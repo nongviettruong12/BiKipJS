@@ -1,0 +1,26 @@
+đồng bộ và bất đồng bộ trong javascript 
+
+đồng bộ là gì: là các tác vụ được thực hiện lần lượt, tác vụ này phải hoàn thành và mới bắt được thực hiện tiếp các tác vụ tiếp theo.
+
+
+bất đồng bộ là gì: là các tác vụ có thể chạy nhiều tác vụ cùng lúc  và không cần phải đợi các tác vụ hoàn thành mới bắt đầu thực hiện.
+
+
+ưu điểm và nhược điểm của đồng bộ: 
+
+ưu điểm: 
++ đơn giản và dễ triển khai
++ kết quả luôn luôn theo trình tự được xác định.
+
+nhược điểm: 
++ nếu một tác vụ mất nhiều thời gian để hoàn thành thì sẽ phải đợi rất lâu để tiếp tục các tác vụ sau. Gây hiện tượng chậm giật lag khó chịu cho người dùng.
+
+ưu điểm và nhược điểm của bất đồng bộ: 
+
+ưu điểm bất đồng bộ:
++ cải thiện hiệu suất vì có thể chạy nhiều tác vụ cùng một lúc
++ thích hợp để sử dụng vào các trường hợp như đọc ghi API sử lý truy vấn vào cơ sở dữ liệu
+
+nhược điểm của bất đồng bộ: 
++ khó kiểm soát các tác vụ 
++ cần có những hàm dùng để xử lý như CallBack, Promise, Async/Await, gây khó dễ cho việc đọc code.
