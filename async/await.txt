@@ -1,0 +1,12 @@
+async await là gì? : async/await là 2 từ khóa để quản lý bất đồng bộ trong javascript, 
+giúp cho việc xử lý các tác vụ như gọi api hoặc làm việc với dữ liệu bất đồng bộ 1 cách dễ dàng hơn.
+
+--khi khai báo 1 hàm với từ khóa async thì hàm đó sẽ trở thành hàm bất đồng bộ và trả về promise.
+cú pháp của async/await: 
+
+const fetchData = async () => {
+    const response = await fetch('https://dummyjson.com/users');
+    const data = await response.json();
+    console.log(data);
+}
+trong đó hàm fetchData là 1 hàm bất đồng bộ bởi vì đã được khai báo với từ khóa async và sẽ chỉ trả về promise.
