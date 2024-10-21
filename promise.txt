@@ -1,0 +1,18 @@
+promise là gì: promise là một đối tượng giúp thực hiện các tác vụ bất đồng bộ để giảm tránh việc bị dính phải callBack Hell
+
+promise sẽ trả về 1 trong 3 trạng thái: 
++ fulfilled khi promise đã thành công
++ rejected khi promise đã thất bại
++ peding khi promise ở trạng thái ban đầu. promise đang chờ đợi
+cú pháp của 1 promise: 
+const myPromise = new Promise((resolve, reject) => {
+
+    const success = true;
+
+    if (success) {
+        resolve("Công việc hoàn thành thành công!");
+    } else {
+        reject("Có lỗi xảy ra!");
+    }
+});
+ở đây khi sử dụng từ khóa promise là đã định nghĩa hàm này là 1 promise và sẽ trả về 1 trong 3 trạng thái ở trên và ở đoạn code này thì sẽ trả về resolve vì điều kiện ở đây là true
