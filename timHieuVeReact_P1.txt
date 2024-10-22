@@ -1,0 +1,7 @@
+1 JSX file: jsx là cụm từ viết tắt của javascript xml cho phép viết mã html trong javascript  
+
+2. conditional render: conditional render là 1 kỹ thuật react cho phép bạn có thể quyết định được muốn hiển thị một phần tử nào đó hay là không dựa trên 1 điều kiện nào đó.
+
+3. PropsType: là một cách để xác định kiểu dữ liệu của một prop truyền vào một component
+
+4. PropDrilling: là hiện tượng phải truyển props từ cấp cha xuống con qua nhiều lớp, ngay cả khi có những components không cần sử dụng đến chúng. Điều này có thể làm cho đoạn code khó đọc và khó bảo trì 
